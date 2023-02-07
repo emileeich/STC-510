@@ -1,21 +1,31 @@
+Emile Eich Module 2 Bash Transcript
+
 Script started on 2023-02-06 20:21:32-07:00 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
 To run a command as administrator (user "root"), use "sudo <command>".
 See "man sudo_root" for details.
 
 [?2004h]0;eeich@TC-4180691: ~[01;32meeich@TC-4180691[00m:[01;34m~[00m$ pwd
-[?2004l/home/eeich
+[?2004l
+/home/eeich
 [?2004h]0;eeich@TC-4180691: ~[01;32meeich@TC-4180691[00m:[01;34m~[00m$ ls
-[?2004l[0m[01;34m'STC 510 Module 2'[0m   module2history_log.txt
+[?2004l
+[0m[01;34m'STC 510 Module 2'[0m   module2history_log.txt
 [?2004h]0;eeich@TC-4180691: ~[01;32meeich@TC-4180691[00m:[01;34m~[00m$ cd "STC 510 Module 2"
-[?2004l[?2004h]0;eeich@TC-4180691: ~/STC 510 Module 2[01;32meeich@TC-4180691[00m:[01;34m~/STC 510 Module 2[00m$ curl -s -L https://www.dropbox.com/s/14jagxjbzhyxg8g/log.tar.gz?dl=0 -o log.tar.gz
-[?2004l
-[?2004h]0;eeich@TC-4180691: ~/STC 510 Module 2[01;32meeich@TC-4180691[00m:[01;34m~/STC 510 Module 2[00m$ 
-[?2004l[?2004h]0;eeich@TC-4180691: ~/STC 510 Module 2[01;32meeich@TC-4180691[00m:[01;34m~/STC 510 Module 2[00m$ tar -xvzf log.tar.gz
-[?2004llog.csv
+[?2004l
+[?2004h]0;eeich@TC-4180691: ~/STC 510 Module 2[01;32meeich@TC-4180691[00m:[01;34m~/STC 510 Module 2[00m$ curl -s -L https://www.dropbox.com/s/14jagxjbzhyxg8g/log.tar.gz?dl=0 -o log.tar.gz
+[?2004l
 
 [?2004h]0;eeich@TC-4180691: ~/STC 510 Module 2[01;32meeich@TC-4180691[00m:[01;34m~/STC 510 Module 2[00m$ 
-[?2004l[?2004h]0;eeich@TC-4180691: ~/STC 510 Module 2[01;32meeich@TC-4180691[00m:[01;34m~/STC 510 Module 2[00m$ grep education log.csv
-[?2004l1.202.140.ged,2017-06-27,01:34:47,0.0,886982.0,0000769993-17-000435,tal[01;31m[Keducation[m[K0gscototal.txt,200.0,5870.0,0.0,0.0,0.0,9.0,0.0,
+[?2004l
+[?2004h]0;eeich@TC-4180691: ~/STC 510 Module 2[01;32meeich@TC-4180691[00m:[01;34m~/STC 510 Module 2[00m$ tar -xvzf log.tar.gz
+[?2004l
+log.csv
+
+[?2004h]0;eeich@TC-4180691: ~/STC 510 Module 2[01;32meeich@TC-4180691[00m:[01;34m~/STC 510 Module 2[00m$ 
+[?2004l
+[?2004h]0;eeich@TC-4180691: ~/STC 510 Module 2[01;32meeich@TC-4180691[00m:[01;34m~/STC 510 Module 2[00m$ grep education log.csv
+[?2004l
+1.202.140.ged,2017-06-27,01:34:47,0.0,886982.0,0000769993-17-000435,tal[01;31m[Keducation[m[K0gscototal.txt,200.0,5870.0,0.0,0.0,0.0,9.0,0.0,
 66.249.64.efi,2017-06-27,02:14:29,0.0,1585002.0,0001585002-14-000027,mhglobal[01;31m[Keducation[m[Kq32014f.htm,304.0,218.0,0.0,0.0,0.0,10.0,0.0,
 61.135.217.idh,2017-06-27,02:15:35,0.0,922475.0,0001213900-16-016519,xslF345X03/f4082916zhang_itt[01;31m[Keducation[m[Kal.,200.0,4073.0,0.0,0.0,0.0,10.0,0.0,
 66.249.64.dea,2017-06-27,03:29:47,0.0,1561880.0,0001213900-16-015821,f8k080816_legacy[01;31m[Keducation[m[K.htm,200.0,2911.0,0.0,0.0,0.0,10.0,0.0,
@@ -108,7 +118,8 @@ See "man sudo_root" for details.
 86.153.148.abf,2017-06-27,23:54:09,0.0,1302343.0,0001390777-09-000029,[01;31m[Keducation[m[Krealty2008yebnymc.txt,200.0,7078.0,0.0,0.0,0.0,10.0,0.0,
 58.177.7.fad,2017-06-27,23:54:52,0.0,1364742.0,0000215457-17-003221,tal.[01;31m[Keducation[m[K.group..txt,200.0,4931.0,0.0,0.0,0.0,10.0,0.0,
 [?2004h]0;eeich@TC-4180691: ~/STC 510 Module 2[01;32meeich@TC-4180691[00m:[01;34m~/STC 510 Module 2[00m$ grep ',.*.education.*.*.txt,' log.csv
-[?2004l1.202.140.ged[01;31m[K,2017-06-27,01:34:47,0.0,886982.0,0000769993-17-000435,taleducation0gscototal.txt,[m[K200.0,5870.0,0.0,0.0,0.0,9.0,0.0,
+[?2004l
+1.202.140.ged[01;31m[K,2017-06-27,01:34:47,0.0,886982.0,0000769993-17-000435,taleducation0gscototal.txt,[m[K200.0,5870.0,0.0,0.0,0.0,9.0,0.0,
 86.153.148.abf[01;31m[K,2017-06-27,06:14:10,0.0,1046568.0,0001132625-10-000026,v13ga4careereducation.txt,[m[K200.0,5440.0,0.0,0.0,0.0,10.0,0.0,
 86.153.148.abf[01;31m[K,2017-06-27,06:59:20,0.0,922475.0,0001086364-10-008787,itteducation012910.txt,[m[K200.0,5188.0,0.0,0.0,0.0,10.0,0.0,
 40.77.167.ifh[01;31m[K,2017-06-27,07:03:14,0.0,1302343.0,0000869311-17-000385,education.realty.trust..txt,[m[K200.0,5145.0,0.0,0.0,0.0,10.0,0.0,
@@ -130,7 +141,8 @@ See "man sudo_root" for details.
 86.153.148.abf[01;31m[K,2017-06-27,23:54:09,0.0,1302343.0,0001390777-09-000029,educationrealty2008yebnymc.txt,[m[K200.0,7078.0,0.0,0.0,0.0,10.0,0.0,
 58.177.7.fad[01;31m[K,2017-06-27,23:54:52,0.0,1364742.0,0000215457-17-003221,tal.education.group..txt,[m[K200.0,4931.0,0.0,0.0,0.0,10.0,0.0,
 [?2004h]0;eeich@TC-4180691: ~/STC 510 Module 2[01;32meeich@TC-4180691[00m:[01;34m~/STC 510 Module 2[00m$ grep -o ',.*.education.*.*.txt,' log.csv
-[?2004l[01;31m[K,2017-06-27,01:34:47,0.0,886982.0,0000769993-17-000435,taleducation0gscototal.txt,[m[K
+[?2004l
+[01;31m[K,2017-06-27,01:34:47,0.0,886982.0,0000769993-17-000435,taleducation0gscototal.txt,[m[K
 [01;31m[K,2017-06-27,06:14:10,0.0,1046568.0,0001132625-10-000026,v13ga4careereducation.txt,[m[K
 [01;31m[K,2017-06-27,06:59:20,0.0,922475.0,0001086364-10-008787,itteducation012910.txt,[m[K
 [01;31m[K,2017-06-27,07:03:14,0.0,1302343.0,0000869311-17-000385,education.realty.trust..txt,[m[K
@@ -152,7 +164,9 @@ See "man sudo_root" for details.
 [01;31m[K,2017-06-27,23:54:09,0.0,1302343.0,0001390777-09-000029,educationrealty2008yebnymc.txt,[m[K
 [01;31m[K,2017-06-27,23:54:52,0.0,1364742.0,0000215457-17-003221,tal.education.group..txt,[m[K
 [?2004h]0;eeich@TC-4180691: ~/STC 510 Module 2[01;32meeich@TC-4180691[00m:[01;34m~/STC 510 Module 2[00m$ grep -o ',.*.education.*.*.txt,' log.csv > "STC 510".txt
-[?2004l[?2004h]0;eeich@TC-4180691: ~/STC 510 Module 2[01;32meeich@TC-4180691[00m:[01;34m~/STC 510 Module 2[00m$ exit
-[?2004lexit
+[?2004l
+[?2004h]0;eeich@TC-4180691: ~/STC 510 Module 2[01;32meeich@TC-4180691[00m:[01;34m~/STC 510 Module 2[00m$ exit
+[?2004l
+exit
 
 Script done on 2023-02-06 20:25:27-07:00 [COMMAND_EXIT_CODE="0"]
