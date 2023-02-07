@@ -1,4 +1,4 @@
-Emile Eich Module 2 Bash Transcript
+Emile Eich Module 2 Bash Transcript Log
 
 Script started on 2023-02-06 20:21:32-07:00 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
 To run a command as administrator (user "root"), use "sudo <command>".
