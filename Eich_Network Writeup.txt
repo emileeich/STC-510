@@ -1,0 +1,22 @@
+First I opened up each of the csv files into Gephi and organized it so that I would be able to visually see the connections. This allowed me to understand the businesses and individuals involved. I ended up starting with the file which shows the business LLC's that the building changed ownership from and to. I chose a directed graph and highlighted this network yellow. 
+
+Afterwards, I started to append or layer on the nodes and edges contained in the other files. 
+
+Appended the gephi file by adding in the business owners (edges highlighted blue).
+
+Appended the file again by adding in family ties (edges highlighted red). This is where we see that there are 2 clusters showing that the business owners are related. We also see that the bridge between these 2 family clusters is Heather. Clearly, the building is just being sold to members within the family, but under a new business name. This communication and continuation of changing ownership between family members is made possible by Heather. We also later find that she is also the bridge between the family/business owners and Moe. 
+
+Finally, we add in the business interests (edges highlighted green). This is where we see how Moe plays a part in this scheme since he has ties with the Mortgage Company. The mortgage company he has ties with is the same company that has given loans to the various business LLC's (same building). 
+
+Betweeness Centrality: I was able to find the 2 most important people in this network by visually adding on the layers and organizing the nodes and edges. While this worked in the case of this small network, a better way to find important nodes in a network is by running network metics and finding the betweeness centrality between the people. Heather, Moe, and Garth were identified as having the highest betweenness centrality. That would have helped me understand where to start and who to look at first in understanding how I could "take down" this network. 
+
+Moe is the only person that connects the family to the Mortgage Company. In turn, Heather is the bridge between the 2 clusters of family business owners that own the LLC's. Heather is also the bridge between the LLC owners to Moe. 
+
+By removing Heather and Moe from the network, the LLC owners/family members would not have the connection to the mortgage company and keep receiving additional loans. And the scheme may have not run as long, due to Heather being the bridge to the 2nd familial cluster which allowed for the building to be transferred. 
+
+Files:
+
+(1) Full Slumlord Network Visualisation: "Slumlord Network"
+(1) Metrics of full slumlord network: "Slumlord Network_metrics"
+(2) Slumlord Network without Heather and Moe Visualisation: "Network_Heather and Moe removed"
+(2) Metrics of network without H and M: "Network Metrics_Heather and Moe removed" 
